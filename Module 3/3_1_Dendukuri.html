@@ -1,0 +1,43 @@
+<!doctype html>
+<!-- Kireeti Varma Dendukuri -->
+<!-- Assignment 3.1: BUZZ Game -->
+<!-- I used the JavaScript modulo operator to find multiples of 7, 11, and numbers that end with 7 -->
+<html>
+<head>
+	<title>3.1 Buzz</title>
+</head>
+
+<body>
+	<!-- Beginning of the javascript -->
+	<script>
+		// Comments no longer work with "<!-- --> as this is javascript.
+		// Loop begins to count x 100 times.
+		for(x=1;x<=100;x++)
+		{
+			var y = 0;
+			// Condition for multiples of 7 to print Buzz.
+			if(x%7==0)
+				{
+					document.write("BUZZ <br/>");
+				}
+			// Condition for multiples of 11 to print Buzz.
+			else if(x%11==0)
+				{
+					document.write("BUZZ <br/>");
+				}
+			// Condition for numbers ending with 7 to print Buzz.
+			else if(x%10==7)
+				{
+					document.write("BUZZ <br/>");
+				}
+			// Condition for all the other numbers to print the number.
+			else
+				{
+					document.write(x + "<br/>");
+				}
+		}
+	// End of script.
+	</script>
+	<!-- End of body -->
+</body>
+</html>

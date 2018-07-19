@@ -1,0 +1,81 @@
+<!doctype html>
+<!-- Kireeti Varma Dendukuri -->
+<!-- Assignment 5.1: Practice DIV making -->
+<!-- I've used three images, titles and descriptions to create three box components. I've used classes to define images, titles and descriptions and also the component boxes to alter css at any point. -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>5_1_Dendukuri_1</title>
+	<!-- CSS Stylesheet begins -->
+	<style>
+		/* Style for the box's parent container. */
+		#boxContainer{
+		
+		}
+		/* Style for the box components. */
+		.boxComponent{
+			width: 20%;
+			min-width: 230px; /* Helps in not clustering the page when the webpage is resized. */
+			margin-left: 10%;
+			margin-top: 50px;
+			border: solid; /* Any other attribute values are not working. This has to be solid and alter width of the border to define the thickness. */
+			display: inline-block; /* This helps in maintaining all the boxes beside each other. */
+		}
+		/* Style for the Images */
+		.boxImage{
+			width: 70%;
+			height: auto;
+			margin: 10px;
+		}
+		/* Style for the Title text */
+		.boxTitle{
+			font-size: 20px;
+			font-weight: 900; /* 900 is Bold weight */
+		}
+		/* Style for the Descriptions */
+		.boxDescription{
+			font-size: 14px;
+			font-weight: 400; /* 400 is regular weight */
+		}
+	</style>
+	<!-- CSS Stylesheet ends -->
+</head>
+
+<body>
+	<div id="boxContainer">
+		<div class="boxComponent">
+			<center>
+				<img src="tymline logo 0.2 300x150.png" class="boxImage" alt="Tymline Logo">
+				<p class="boxTitle">
+					Tymline
+				</p>
+				<p class="boxDescription">
+					Tymline is a social network that allows users to create multiple timelines for multiple purposes.
+				</p>
+			</center>
+		</div>
+		<div class="boxComponent">
+			<center>
+				<img class="boxImage" src="imuxlogo.png" alt="Tymline Logo">
+				<p class="boxTitle">
+					Imux
+				</p>
+				<p class="boxDescription">
+					Imux is a data intelligence tool that helps users to link the database to extract analytics from them.
+				</p>
+			</center>
+		</div>
+		<div class="boxComponent">
+			<center>
+				<img class="boxImage" src="stn91_high.png" alt="Tymline Logo">
+				<p class="boxTitle">
+					Station 91
+				</p>
+				<p class="boxDescription">
+					Station 91 is a co-learning space where individuals or organisations can teach others using the platform.
+				</p>
+			</center>
+		</div>
+	</div>
+</body>
+</html>

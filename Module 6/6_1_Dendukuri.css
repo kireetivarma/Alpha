@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/* Kireeti Varma Dendukuri
+Assignment 6.1: Honing Our Sample Design
+I've taken an article from The Atlantic, published on 6th February 2018 about the Car & Spaceman suit that Elon Musk has sent into the space on behalf of Tesla & SpaceX. */
+
+/* *, *:before, *:after {
+		box-sizing:border-box;
+		border: 2px solid red;
+		} */
+
+		/* Parent component */
+		.containerbox {
+			width:70%;
+			margin-left:auto; /* Maintaining space on the left & right */
+			margin-right:auto;
+		}
+
+		/* Content Box */
+		.contentspace {
+			width:55%;
+			float: left;
+			display: block;
+		}
+
+		/* Sidebar Style */
+		.sidebar {
+			width:43.5%;
+			float: right;
+			display: block;
+			margin-left: 10px;
+			margin-top: 10px;
+			height: auto; /* This is a test and couldn't work. Wanted to match the height of the rightpara to match layout and give a background colour but failed to do so. */
+			text-indent: 10px;
+			border: thin #000000 solid;
+		}	
+
+		/* Left Paragraph Style */
+		.leftpara{
+			float:left;
+			margin-right:2.5%;
+			width:47.5%;
+			text-align: justify;
+			display: block;
+			font-family: 'Playfair Display', serif;
+		}
+
+		/* Right Paragraph Style */
+		.rightpara{
+			float:right;
+			margin-left:2.5%;
+			text-align: justify;
+			width:47.5%;
+			font-family: 'Playfair Display', serif;
+		}
+
+		/* Main title of the page & article */
+		.articletitle{
+			font-size: 35px;
+			font-family: 'Playfair Display SC', serif;
+			font-weight: bold;
+		}
+
+		/* Source link of the image */
+		.sourcecredit{
+			font-size: 10px;
+			font-family: 'Playfair Display', serif;
+		}
+
+		/* Images within the description or content */
+		.descimage{
+			width: 100%;
+			margin-bottom: 100px;
+		}
+
+		/* Seperator Line */
+		.seperatorline{
+			width: 100%;
+			height: 10px;
+			border-top: 1px #000000 solid;
+		}
+
+		/* Footer Style */
+		.footer{
+			position: fixed; /* Made the position fixed so that the problem of footer overlapping other components is taken care of. Otherwise, I had to give an additional margin to measure and palce the footer as intended. */
+    		left: 0;
+			bottom: 0;
+			width: 100%;
+			color: black;
+			background: white;
+			text-align: center;
+			border-top: 1px black solid;
+			font-family: 'Playfair Display', serif;
+		}

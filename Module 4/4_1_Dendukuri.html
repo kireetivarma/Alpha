@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- Kireeti Varma Dendukuri -->
+<!-- Assignment 4.1 -->
+<!-- Guess Game -->
+<html>
+	<head>
+		<title>Guessing Game</title>
+		<script type="text/javascript">
+			// Generating a random number
+			var r = Math.floor((Math.random()*100)+1);
+			// Evaluating input value begins
+			function eval() // Found Evaluate() is an actual function. Found errors and later decided to rename it as eval.
+			{
+				// Assigning the value entered in the text box to a variable
+				var x = document.getElementById("inputvalue").value;
+				// Condition to check the value and the random nnumber
+				if((x>100)||(x<1)) //Condition to exclude unexpected numbers
+					{document.getElementById("answer").innerHTML="Enter number between 1 to 100 only.";}
+				else if(x==r) //condition if value is found
+					{document.getElementById("answer").innerHTML="Found!";}
+				else if(x<r) // Condition if value is less than random number
+					{document.getElementById("answer").innerHTML="Number have to be Higher than entered value.";}
+				else if(x>r) // Condition if value is greater than random number
+					{document.getElementById("answer").innerHTML="Number have to be Lower than entered value.";}
+			}
+		</script>
+	</head>
+	<body> 
+		<form action="#" method="GET">
+		<center> Enter a number: <input type="text" id="inputvalue"> </center> <br/>
+		<center> <button type="submit" onclick="eval();" value="Check"> Check </button> </center> <br/>
+		<center><div id="result">"<span id="answer"></span>"</div> </center>
+        </form>
+	</body>
+</html>
