@@ -72,6 +72,17 @@
 			height: 0px;
 			color: black;
 		}
+		.PageTitleImage
+		{
+			width: 25%;
+			margin-top: 75px;
+			margin-bottom: 35px;
+		}
+		.PageText
+		{
+			font-family: 'Quicksand', sans-serif;
+			font-size: 20px
+		}
 		.ItemsSection
 		{
 			margin-top: 50px;
@@ -111,6 +122,7 @@
 			margin: auto;
 			float: none;
 		}
+		
 		.dateofitem
 		{
 			margin: 0 auto;
@@ -132,6 +144,39 @@
 			color: black;
 			text-align: center;
 			font-family: 'Quicksand', sans-serif;
+		}
+		.ItemTitle
+		{
+			margin: 0 auto;
+			margin-top: 10px;
+			position: relative;
+			height: auto;
+			color: black;
+			text-align: center;
+			font-family: 'Quicksand', sans-serif;
+			font-weight: 700;
+		}
+		.ItemText
+		{
+			margin: 0 auto;
+			margin-top: 10px;
+			position: relative;
+			height: auto;
+			color: black;
+			text-align: center;
+			font-family: 'Quicksand', sans-serif;
+		}
+		.ShowcaseSection
+		{
+			background-color: #E8E6E6;
+		}
+		.ShowcaseImage
+		{
+			width: 75%;
+			padding-top: 100px;
+			padding-bottom: 100px;
+			display: block;
+			margin: auto;
 		}
 		.FooterSection
 		{
