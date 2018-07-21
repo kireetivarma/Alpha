@@ -1,0 +1,146 @@
+		body
+		{
+			background-color: #ffffff;
+		}
+		.HeaderTitle
+		{
+			background-color: #E8E6E6;
+			height: 110px;
+		}
+		#TitleText
+		{
+			font-size: 60px;
+			margin: 0px;
+			padding-top: 20px;
+			text-align: center;
+			color: #C7C7C7;
+			font-family: 'Quicksand', sans-serif;
+			font-weight:100;
+		}
+		#TitleText:hover
+		{
+			color: black;
+		}
+		#WebSection
+		{
+			background-color: #000000;
+		}
+		#GraphicSection
+		{
+			background-color: #E8E6E6;
+		}
+		.CenteredBlock
+		{
+			margin: auto;
+			width: 75%;
+		}
+		.SectionTitle
+		{
+			color: white;
+			font-family: 'Quicksand', sans-serif;
+			font-weight: bold;
+			font-size:45px;
+			margin: 0px;
+			padding-top: 30px;
+			padding-bottom: 15px;
+		}
+		.GSectionTitle
+		{
+			color: black;
+			font-family: 'Quicksand', sans-serif;
+			font-weight: bold;
+			font-size:45px;
+			margin: 0px;
+			padding-top: 30px;
+			padding-bottom: 15px;
+		}
+		.HighlightLine
+		{
+			width: 42px;
+			border: 2px solid;
+			border-radius: 3px;
+			position:inherit;
+			height: 0px;
+			color: white;
+		}
+		.GHighlightLine
+		{
+			width: 42px;
+			border: 2px solid;
+			border-radius: 3px;
+			position:inherit;
+			height: 0px;
+			color: black;
+		}
+		.ItemsSection
+		{
+			margin-top: 50px;
+			height: 200px;
+		}
+		.ListOfItems
+		{
+			height: 100px;
+		}
+		.Item
+		{
+			width: 33%;
+			float: left;
+		}
+		.GItem
+		{
+			width: 20%;
+			float: left;
+		}
+		.ItemLogo
+		{
+			height: 50px;
+		}
+		.ItemImage
+		{
+			display: block;
+			max-width: 70%;
+			max-height: 50px;
+			margin: auto;
+			float: none;
+		}
+		.GItemImage
+		{
+			display: block;
+			max-width: 90%;
+			max-height: 50px;
+			margin: auto;
+			float: none;
+		}
+		.dateofitem
+		{
+			margin: 0 auto;
+			margin-top: 10px;
+			position: relative;
+			width: 50%;
+			height: auto;
+			color: white;
+			text-align: center;
+			font-family: 'Quicksand', sans-serif;
+		}
+		.Gdateofitem
+		{
+			margin: 0 auto;
+			margin-top: 10px;
+			position: relative;
+			width: 50%;
+			height: auto;
+			color: black;
+			text-align: center;
+			font-family: 'Quicksand', sans-serif;
+		}
+		.FooterSection
+		{
+			background-color: #ffffff;
+		}
+		.FooterText
+		{
+			padding: 20px;
+			margin: 0px;
+			font-family: 'Quicksand', sans-serif;
+			text-align: center;
+		}
