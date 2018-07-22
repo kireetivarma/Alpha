@@ -2,10 +2,26 @@
 		{
 			background-color: #ffffff;
 		}
+		a:link {
+			text-decoration: none;
+			color: inherit;
+		}
+		a:visited {
+			text-decoration: none;
+			color: inherit;
+		}
+		a:active {
+			text-decoration: none;
+			color: inherit;
+		}
+		a:hover {
+			text-decoration: none;
+			color: inherit;
+		}
 		.HeaderTitle
 		{
 			background-color: #E8E6E6;
-			height: 110px;
+			height: 140px;
 		}
 		#TitleText
 		{
@@ -13,13 +29,27 @@
 			margin: 0px;
 			padding-top: 20px;
 			text-align: center;
-			color: #C7C7C7;
-			font-family: 'Quicksand', sans-serif;
-			font-weight:100;
+			color: #C7C7C7!important;
+			font-family: 'Quicksand', sans-serif!important;
+			font-weight:100!important;
 		}
 		#TitleText:hover
 		{
-			color: black;
+			color: black!important;
+		}
+		#TitleDesc
+		{
+			font-size: 15px;
+			margin: 0px;
+			padding-top: 20px;
+			text-align: center;
+			color: #C7C7C7!important;
+			font-family: 'Quicksand', sans-serif!important;
+			font-weight:100!important;
+		}
+		#TitleDesc:hover
+		{
+			color: black!important;
 		}
 		#WebSection
 		{
@@ -178,8 +208,17 @@
 		.ShowcaseSection
 		{
 			background-color: #E8E6E6;
-			padding-top: 100px;
+			padding-top: 60px;
 			padding-bottom: 100px;
+		}
+		.ShowcaseText
+		{
+			margin: auto;
+			width: 30%;
+			font-family: 'Quicksand', sans-serif;
+			text-align: center;
+			margin-top: 0px;
+			margin-bottom: 40px;
 		}
 		.ShowcaseImage
 		{
