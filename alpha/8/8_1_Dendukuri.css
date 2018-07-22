@@ -113,6 +113,11 @@
 			max-height: 50px;
 			margin: auto;
 			float: none;
+			transition: transform .5s;
+		}
+		.ItemImage:hover
+		{
+			transform: scale(1.05);
 		}
 		.GItemImage
 		{
@@ -121,8 +126,12 @@
 			max-height: 50px;
 			margin: auto;
 			float: none;
+			transition: transform .5s;
 		}
-		
+		.GItemImage:hover
+		{
+			transform: scale(1.05);
+		}
 		.dateofitem
 		{
 			margin: 0 auto;
@@ -169,14 +178,20 @@
 		.ShowcaseSection
 		{
 			background-color: #E8E6E6;
+			padding-top: 100px;
+			padding-bottom: 100px;
 		}
 		.ShowcaseImage
 		{
 			width: 75%;
-			padding-top: 100px;
-			padding-bottom: 100px;
 			display: block;
 			margin: auto;
+			box-shadow: 5px 5px 100px 6px rgba(0,0,0,0.5);
+			transition: transform .5s;
+		}
+		.ShowcaseImage:hover
+		{
+			transform: scale(1.05)
 		}
 		.FooterSection
 		{
