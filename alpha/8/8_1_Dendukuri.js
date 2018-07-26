@@ -3,7 +3,7 @@
 
 // JavaScript Document for the portfolio project. The script enable a user to click on the image to switch it to another image in the available set. As the page is a portfolio page for a logo, the logo shall be changed into different defined brand colour to showcase its design in various environments.
 
-// Defining two variable usable by individual images on the page
+// Defining two variable usable by individual images on the page.
 var x=0; 
 var y=0;
 
