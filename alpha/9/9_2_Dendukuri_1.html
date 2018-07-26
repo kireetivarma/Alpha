@@ -5,12 +5,10 @@
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
+      /* Height of the map. */
       #map {
         height: 100%;
       }
-      /* Optional: Makes the sample page fill the window. */
       html, body {
         height: 100%;
         margin: 0;
@@ -22,6 +20,7 @@
     <div id="map"></div>
     <script>
       var map;
+	  // Funtion being called from the script // 
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 6.755468, lng: 93.827737},
@@ -30,6 +29,7 @@
         });
       }
     </script>
+	  <!-- Script to run the Maps API -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtxKFjbnYBunHJ12c8eeMc96Y-5w877xY&callback=initMap&sensor=True"
     async defer></script>
   </body>
