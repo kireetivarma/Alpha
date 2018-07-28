@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>animate demo</title>
+	<style>
+		.block 
+		{
+			position: absolute;
+			background-color: #abc;
+			width: 100%;
+			height: 1000px;
+			margin: 5px;
+		}
+		.left
+		{
+			float: left;
+			width: 50%;
+			height: 100%;
+			background-color: black; 
+		}
+		.right
+		{
+			float: left;
+			width: 50%;
+			height: 100%;
+		}
+		#p
+		{
+			font-size: 20px;
+		}
+	</style>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+	<div class="header">
+		<p id="title"><center>Move mouse over the block to move the block.</center></p>
+	</div>
+	<div class="block">
+		<div class="left"></div>
+		<div class="right"></div>
+	</div>
+ 
+<script>
+$( ".right" ).mousemove(function() {
+  $( ".block" ).animate({ "left": "+=1px" }, 1 );
+});
+ 
+$( ".left" ).mousemove(function(){
+  $( ".block" ).animate({ "left": "-=1px" }, 1 );
+});
+</script>
+ 
+</body>
+</html>
