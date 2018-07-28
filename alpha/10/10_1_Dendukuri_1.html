@@ -1,0 +1,43 @@
+<!doctype html>
+<!-- Kireeti Varma Dendukuri -->
+<!-- Assignment 10.1/ jQuery Effects -->
+<!-- This is a demonstration of using jQuery to change effect -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery Effects</title>
+	<!-- Linkin the CSS file -->
+	<link rel="stylesheet" href="10_1_Dendukuri_1.css">
+	<!-- Linking the jQuery script file -->
+  	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+	<!-- Element to trigger hover action -->
+	<center><button class="centerbtn">Hover</button></center>
+	<br>
+	<!-- Concentric circles layout -->
+	<div class="layer4">
+		<div class="layer3">
+			<div class="layer2">
+				<div class="layer1">
+					<div class="layer0"></div>
+				</div>
+			</div>
+		</div>
+	</div> 
+</body>
+<script>
+	/* jQuery script using Hide() to create a timed animation */
+	$( ".centerbtn" ).on( "mouseover", function() {
+					$(".layer0").hide(800,function() {
+						$(".layer1").hide(800,function() {
+							$(".layer2").hide(800,function() {
+								$(".layer3").hide(800, function() {
+									$( ".layer4" ).hide(800)
+								})
+							})
+						})
+					});
+				},);
+</script>
+</html>
