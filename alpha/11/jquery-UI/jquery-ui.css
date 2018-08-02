@@ -880,6 +880,7 @@ button.ui-button::-moz-focus-inner {
 }
 body .ui-tooltip {
 	border-width: 2px;
+	color: black;
 }
 
 /* Component containers
