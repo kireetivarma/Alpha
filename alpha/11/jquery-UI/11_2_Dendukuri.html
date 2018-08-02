@@ -4,8 +4,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>jQuery UI Example Page</title>
+	<!-- Linked stylesheet -->
 	<link href="jquery-ui.css" rel="stylesheet">
 	<style>
+	/* Setting the brand colour as background colour */
 	body{
 		font-family: "Trebuchet MS", sans-serif;
 		margin: 50px;
@@ -46,7 +48,7 @@
 </div>
 
 
-<!-- Accordion -->
+<!-- Accordion starts-->
 <h2 class="demoHeaders">Clues Set</h2>
 <div id="accordion">
 	<h3>First Clue</h3>
@@ -59,10 +61,12 @@
 	
 <h2 class="demoHeaders">Done guessing the brand?</h2>
 
+<!-- Dialog content -->
 <div id="dialog" title="Did you guess it right?">
 	<p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>It's Tesla!</p>
 </div>
 	
+<!-- Tooltip over the button. Tooltip + Button -->
 <p id="tooltip">
 	<button id="dialog-link" class="ui-button ui-corner-all ui-widget">
 		<span class="ui-icon ui-icon-newwin"></span>
@@ -77,7 +81,7 @@
 
 $( "#accordion" ).accordion();
 
-
+// Script for dialog box
 $( function() {
 		$( "#dialog" ).dialog({
 			autoOpen: false,  
@@ -99,7 +103,7 @@ $( function() {
     });
 	  	});
 
-
+// Script for toolkit.
 $( "#tooltip" ).tooltip();
 
 // Hover states on the static widgets
