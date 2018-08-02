@@ -1,18 +1,24 @@
 <!doctype html>
+<!-- Kireeti Varma Dendukuri -->
+<!-- Assignment 11.1/ jQuery UI -->
+<!-- This is a demonstration of using jQuery UI and its elements. -->
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>jQuery UI Checkboxradio - No Icons</title>
+	<title>jQuery UI</title>
+	<!-- Linking jquery UI -->
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script>
+		/* Script for Checkbox/ Radio buttons */
 		$( function() {
 		$( "input" ).checkboxradio({
 		  icon: false
 		});
 		} );
 		
+		/* Script for the dialog box */
 		$( function() {
 		$( "#dialog-confirm" ).dialog({
 			autoOpen: false,  
@@ -34,6 +40,8 @@
     });
 	  	});
 	</script>
+	
+	<!--  Styling for the background & submit button -->
 	<style>
 		body
 		{
@@ -60,6 +68,8 @@
 	</div>
 		
 	<br>
+	
+	<!--  List begins -->
 	<div class="widget">
 		<h3>Your Academy Journey So far</h3>
 		<h4>How do you rate the overall experience?</h4>
@@ -108,10 +118,12 @@
 		</fieldset>
 	</div>
 	
+	<!--  Dialog box -->
 	<div id="dialog-confirm" title="Sure you want to submit?">
 	<p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>Your answers will be submitted. This cannot be undone. Are you sure?</p>
 	</div>
- 
+ 	
+	<!-- Submit button -->
 	<button id="opener">Submit</button>
  
 </body>
