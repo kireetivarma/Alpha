@@ -58,15 +58,18 @@
 </div>
 	
 <h2 class="demoHeaders">Done guessing the brand?</h2>
+
+<div id="dialog" title="Did you guess it right?">
+	<p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>It's Tesla!</p>
+</div>
+	
 <p id="tooltip">
 	<button id="dialog-link" class="ui-button ui-corner-all ui-widget">
 		<span class="ui-icon ui-icon-newwin"></span>
 	<a title="Don&apos;t click until you guessed it.">Check the Brand.</a> 
 	</button>
 </p>
-<div id="dialog" title="Did you guess it right?">
-	<p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>It's Tesla!</p>
-</div>
+
 
 <script src="external/jquery/jquery.js"></script>
 <script src="jquery-ui.js"></script>
@@ -114,7 +117,7 @@ $( function() {
 					}
 				}
 			}); 
-	$( "#opener" ).on( "click", function() {
+	$( "#dialog-link" ).on( "click", function() {
       $( "#dialog" ).dialog( "open" );
     });
 	  	});
