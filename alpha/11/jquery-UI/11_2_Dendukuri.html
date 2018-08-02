@@ -97,11 +97,14 @@ $( "#dialog" ).dialog({
 });
 
 // Link to open the dialog
-$( "#dialog-link" ).click(function( event ) {
-	$( "#dialog" ).dialog( "open" );
-	event.preventDefault();
-});
-
+// $( "#dialog-link" ).click(function( event ) {
+//	$( "#dialog" ).dialog( "open" );
+//	event.preventDefault();
+// });
+$( "#dialog-link" ).on( "click", function() {
+      $( "#dialog" ).dialog( "open" );
+    });
+	  	});
 
 
 $( "#tooltip" ).tooltip();
