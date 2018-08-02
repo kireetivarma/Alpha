@@ -60,16 +60,18 @@
 <h2 class="demoHeaders">Dialog</h2>
 <p>
 	<button id="dialog-link" class="ui-button ui-corner-all ui-widget">
-		<span class="ui-icon ui-icon-newwin"></span>Guess &amp; Check
+		<span class="ui-icon ui-icon-newwin"></span>Check the Brand.
 	</button>
 </p>
-
-<!-- Tooltip 
+<div id="dialog" title="Did you guess it right?">
+	<p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>It's Tesla!</p>
+</div>
+<!-- Tooltip -->
 <h2 class="demoHeaders">Tooltip</h2>
 <p id="tooltip">
 	<a href="#" title="That&apos;s what this widget is">Tooltips</a> can be attached to any element. When you hover
 the element with your mouse, the title attribute is displayed in a little box next to the element, just like a native tooltip.
-</p>-->
+</p>
 
 <script src="external/jquery/jquery.js"></script>
 <script src="jquery-ui.js"></script>
@@ -109,10 +111,10 @@ $( function() {
 			  width: 400,
 			  modal: true,
 			  buttons: {
-				"Submit": function() {
+				"Right": function() {
 					$( this ).dialog( "close" );
 					},
-				Cancel: function() {
+				Wrong: function() {
 					$( this ).dialog( "close" );
 					}
 				}
