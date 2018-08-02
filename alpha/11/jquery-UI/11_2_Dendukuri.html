@@ -77,31 +77,47 @@ the element with your mouse, the title attribute is displayed in a little box ne
 
 $( "#accordion" ).accordion();
 
-$( "#dialog" ).dialog({
-	autoOpen: false,
-	width: 400,
-	buttons: [
-		{
-			text: "Ok",
-			click: function() {
-				$( this ).dialog( "close" );
-			}
-		},
-		{
-			text: "Cancel",
-			click: function() {
-				$( this ).dialog( "close" );
-			}
-		}
-	]
-});
+// $( "#dialog" ).dialog({
+//	autoOpen: false,
+//	width: 400,
+//	buttons: [
+//		{
+//			text: "Ok",
+//			click: function() {
+//				$( this ).dialog( "close" );
+//			}
+//		},
+//		{
+//			text: "Cancel",
+//			click: function() {
+//				$( this ).dialog( "close" );
+//			}
+//		}
+//	]
+// });
 
 // Link to open the dialog
 // $( "#dialog-link" ).click(function( event ) {
 //	$( "#dialog" ).dialog( "open" );
 //	event.preventDefault();
 // });
-$( "#dialog-link" ).on( "click", function() {
+$( function() {
+		$( "#dialog" ).dialog({
+			autoOpen: false,  
+			resizable: false,
+			  height: "auto",
+			  width: 400,
+			  modal: true,
+			  buttons: {
+				"Submit": function() {
+					$( this ).dialog( "close" );
+					},
+				Cancel: function() {
+					$( this ).dialog( "close" );
+					}
+				}
+			}); 
+	$( "#opener" ).on( "click", function() {
       $( "#dialog" ).dialog( "open" );
     });
 	  	});
