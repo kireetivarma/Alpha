@@ -609,6 +609,7 @@ button.ui-button::-moz-focus-inner {
 	padding: .5em 1em;
 	background: none;
 	overflow: auto;
+	color: black;
 }
 .ui-dialog .ui-dialog-buttonpane {
 	text-align: left;
