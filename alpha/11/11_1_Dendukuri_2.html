@@ -15,20 +15,24 @@
 		
 		$( function() {
 		$( "#dialog-confirm" ).dialog({
-		  resizable: false,
-		  height: "auto",
-		  width: 400,
-		  modal: true,
-		  buttons: {
-			"Delete all items": function() {
-			  $( this ).dialog( "close" );
-			},
-			Cancel: function() {
-			  $( this ).dialog( "close" );
-			}
-		  }
-		});
-	  } );
+			autoOpen: false,  
+			resizable: false,
+			  height: "auto",
+			  width: 400,
+			  modal: true,
+			  buttons: {
+				"Submit": function() {
+					$( this ).dialog( "close" );
+					},
+				Cancel: function() {
+					$( this ).dialog( "close" );
+					}
+				}
+			}); 
+	$( "#opener" ).on( "click", function() {
+      $( "#dialog" ).dialog( "open" );
+    });
+	  	});
 	</script>
 	<style>
 		body
@@ -97,10 +101,11 @@
 		</fieldset>
 	</div>
 	
-	 <div id="dialog-confirm" title="Sure you want to submit?">
+	<div id="dialog-confirm" title="Sure you want to submit?">
 	<p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>Your answers will be submitted. This cannot be undone. Are you sure?</p>
 	</div>
  
+	<button id="opener">Open Dialog</button>
  
 </body>
 </html>
