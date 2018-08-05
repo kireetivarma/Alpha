@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- Kireeti Varma Dendukuri -->
+<!-- Assignment 12.1/ HTML5 Canvas -->
+<!-- This is a demonstration of HTML5 Canvas with an element loop. -->
+<html>
+<head>
+<title>HTML5 Canvas</title>
+    <style>
+		/* Container scope */
+        #container {
+            width:1200px;
+            height:900px;
+            margin: 0px auto;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+		<!-- Convas specs -->
+        <canvas id="demoCanvas" width="1200" height="900"></canvas>
+    </div>
+    
+	<!-- Script for HTML5 Canvas Begins -->
+	<script type="text/javascript">
+	
+		// Declaring the canvas
+		var tmp = document.getElementById("demoCanvas");
+		var ctx = tmp.getContext("2d");
+		
+		// Declaring variable for the function to run.
+		var i;
+		var x;
+		var o=0.06;
+		
+		// Defining the outer circle with light opacity of variable o.
+		// Have tried multiple time to implement without the 1st iteration code outside the for loop. But this seems to be mandatory for some reason.
+        ctx.beginPath();
+		ctx.arc(600, 450, 25 * 15, 0, 2*Math.PI);
+		ctx.fillStyle= "rgba(0,0,0,0.06)";
+		ctx.fill();
+		ctx.closePath();
+		
+		// Looped the iteration to run 14 times to create the rest of the circles.
+		for(i=14,x=2;i>=0;i--,x++)
+			{
+				ctx.beginPath();
+				ctx.arc(600, 450, 25 * i, 0, 2*Math.PI);
+				ctx.fillStyle= "rgba(0,0,0,o*x)";
+				ctx.fill();
+				ctx.closePath();
+			}
+		
+	</script>
+</body>
+</html>
