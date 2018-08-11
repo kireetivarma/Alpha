@@ -83,18 +83,24 @@ ul
 {
 	width: 80%;
 	margin-left: 10%;
-	padding: 200px 0px 150px 0px;
+	padding: 100px 0px 100px 0px;
+	clear: left;
 }
 .HomeSection1
 {
-	padding-top: 200px;
-	padding-bottom: 200px;
+	clear: left;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	margin: 100px auto 100px auto !important;
+	display: table;
+	width:100%;
 }
 #HS1LeftSegment
 {
 	width: 60%;
 	float: left;
 	height: 310px;
+	display: block;
 }
 #HS1LSHeader
 {
@@ -121,6 +127,7 @@ ul
 	font-weight: 400;
 	font-size: 18px;
 	padding: 15px;
+	transition: all .25s ease-in-out;
 }
 .UniversalBtn:hover
 {
@@ -151,15 +158,20 @@ ul
 {
 	width: 100%;
 	height: auto;
+	min-width: 300px;
+	float: left;
 }
 .HomeSection2
 {
 	clear: left;
+	padding: 400px auto 100px auto!important;
+	margin: 200px auto 100px auto !important;
 }
 #HS2Segment
 {
 	width: 60%;
 	margin: auto;
+	margin-top: 100px;
 }
 #HS2SDescription
 {
@@ -179,6 +191,8 @@ ul
 .HomeSection3
 {
 	clear: left;
+	padding: 200px auto 400px auto !important;
+	margin-bottom: 200px;
 }
 #HS3Segment
 {
@@ -259,7 +273,51 @@ ul
 }
 
 
-
+/* About Page */
+#AboutSegment
+{
+	width: 80%;
+	margin: auto;
+	padding-bottom: 50px;
+	border: 1px solid white;
+	border-radius: 10px;
+	box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.2);
+}
+#ASTitleRow
+{
+	width: 25%;
+	height: 50px;
+	margin: 50px auto auto auto;
+}
+#AboutTitle
+{
+	font-size: 20px;
+	font-family: 'Quicksand', sans-serif!important;
+	font-weight: 700!important;
+	text-align: center;
+}
+#ASDescriptionRow
+{
+	width: 80%;
+	margin: auto;
+}
+.AboutDescription
+{
+	margin: 50px;
+	font-size: 14px;
+	font-family: 'Quicksand', sans-serif!important;
+	font-weight: 400!important;
+	text-align: justify
+}
+.AboutSeperator
+{
+	width: 10%;
+	margin: auto;
+	font-size: 20px;
+	font-family: 'Quicksand', sans-serif!important;
+	font-weight: 700!important;
+	text-align: center;
+}
 
 
 
