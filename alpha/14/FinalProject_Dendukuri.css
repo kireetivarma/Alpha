@@ -1,0 +1,287 @@
+/* Kireeti Varma Dendukuri */
+/* Final Project: Portfolio */
+
+/* Central CSS file used by all the pages. */
+
+body /* Setting tha background colour of the pages */
+{
+	background-color: #ffffff;
+}
+/* Removing decoration for the links */
+a:link { 
+	text-decoration: none;
+	color: inherit;
+}
+a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+a:active {
+	text-decoration: none;
+	color: inherit;
+}
+a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+.HeaderTitle /* Title section */
+{
+	background-color: #ffffff;
+	height: 140px;
+}
+#TitleText  /* Title Style */
+{
+	font-size: 20px;
+	margin-left: 10%;
+	padding-top: 20px;
+	color: #000000!important; /* Insisted this to be important as the style was ignored due to the link */
+	font-family: 'Quicksand', sans-serif!important; /* Insisted this to be important as the style was ignored due to the link */
+	font-weight:700!important; /* Insisted this to be important as the style was ignored due to the link */
+	float: left;
+}
+#TitleText:hover /* Title style as hovered upon */
+{
+	color: #44C4CD !important;
+}
+ul 
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	padding-top: 20px;
+}
+li 
+{
+	display: inline;
+	float: left;
+}
+#MenuItem
+{
+	float: right;
+	margin-right: 10%;
+}
+.MenuItem
+{
+	display: block;
+    margin: 10px;
+	padding: 15px;
+	font-size: 12px;
+	font-family: 'Quicksand', sans-serif!important; /* Insisted this to be important as the style was ignored due to the link */
+	font-weight:100!important; /* Insisted this to be important as the style was ignored due to the link */ 
+}
+.MenuItem:hover
+{
+	background-color: #44C4CD;
+	color: white;
+}
+.Active 
+{
+    color: #44C4CD!important;
+	background-color: white!important;
+}
+#TitleDesc /* Description style */
+{
+	font-size: 15px;
+	margin: 0px;
+	padding-top: 20px;
+	text-align: center;
+	color: #C7C7C7!important;
+	font-family: 'Quicksand', sans-serif!important;
+	font-weight:100!important;
+}
+#TitleDesc:hover /* Descriptio nstyle as hovered upon */
+{
+	color: black!important;
+}
+#WebSection /* Setting background for section */
+{
+	background-color: #000000;
+}
+#GraphicSection /* Setting background for section */
+{
+	background-color: #E8E6E6;
+}
+.CenteredBlock /* Making all elements centered along with a defined space to place all of them */
+{
+	margin: auto;
+	width: 75%;
+}
+.SectionTitle /* Section title style */
+{
+	color: white;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	font-size:45px;
+	margin: 0px;
+	padding-top: 30px;
+	padding-bottom: 15px;
+}
+.GSectionTitle /* Second section title style */
+{
+	color: black;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	font-size:45px;
+	margin: 0px;
+	padding-top: 30px;
+	padding-bottom: 15px;
+}
+.HighlightLine /* Seperator line */
+{
+	width: 42px;
+	border: 2px solid;
+	border-radius: 3px;
+	position:inherit;
+	height: 0px;
+	color: white;
+}
+.GHighlightLine /* Seperator line */
+{
+	width: 42px;
+	border: 2px solid;
+	border-radius: 3px;
+	position:inherit;
+	height: 0px;
+	color: black;
+}
+.PageTitleImage /* Title Image of the Portfolio page */
+{
+	width: 25%;
+	margin-top: 75px;
+	margin-bottom: 35px;
+}
+.PageText /* Text style */
+{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 20px
+}
+.ItemsSection /* Defining section height to maintain gap between next section */
+{
+	margin-top: 50px;
+	height: 200px;
+}
+.ListOfItems /* Defining usable area */
+{
+	height: 100px;
+}
+.Item /* Defining item width and placcement */
+{
+	width: 33%;
+	float: left;
+}
+.GItem  /* Defining item and placement for graphic section */
+{
+	width: 20%;
+	float: left;
+}
+.ItemLogo /* Portfolio Item height */
+{
+	height: 50px;
+}
+.ItemImage /* Portfolio Image style */
+{
+	display: block;
+	max-width: 70%;
+	max-height: 50px;
+	margin: auto;
+	float: none;
+	transition: transform .5s; /* Transition, period */
+}
+.ItemImage:hover /* Portfolio image hover transformation */
+{
+	transform: scale(1.05);
+}
+.GItemImage /* Portfolio Image style */
+{
+	display: block;
+	max-width: 90%;
+	max-height: 50px;
+	margin: auto;
+	float: none;
+	transition: transform .5s;
+}
+.GItemImage:hover /* Portfolio image hover transformation */
+{
+	transform: scale(1.05);
+}
+.dateofitem /* Date of Item style */
+{
+	margin: 0 auto;
+	margin-top: 10px;
+	position: relative;
+	width: 50%;
+	height: auto;
+	color: white;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+}
+.Gdateofitem /* Style for date at Graphic Section */
+{
+	margin: 0 auto;
+	margin-top: 10px;
+	position: relative;
+	width: 50%;
+	height: auto;
+	color: black;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+}
+.ItemTitle /* Title of list at portfolio page */
+{
+	margin: 0 auto;
+	margin-top: 10px;
+	position: relative;
+	height: auto;
+	color: black;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 700;
+}
+.ItemText /* Text of list at portfolio page */
+{
+	margin: 0 auto;
+	margin-top: 10px;
+	position: relative;
+	height: auto;
+	color: black;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+}
+.ShowcaseSection /* Defining Section Style */
+{
+	background-color: #E8E6E6;
+	padding-top: 60px;
+	padding-bottom: 100px;
+}
+.ShowcaseText /* Styling Text inside showcase section */
+{
+	margin: auto;
+	width: 30%;
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 40px;
+}
+.ShowcaseImage /* Styling Image inside showcase section */
+{
+	width: 75%;
+	display: block;
+	margin: auto;
+	box-shadow: 5px 5px 100px 6px rgba(0,0,0,0.5);
+	transition: transform .5s;
+}
+.ShowcaseImage:hover /* Styling hover for image */
+{
+	transform: scale(1.05)
+}
+.FooterSection /* Footer section */
+{
+	background-color: #ffffff;
+}
+.FooterText /* Footer text style */
+{
+	padding: 20px;
+	margin: 0px;
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+}
