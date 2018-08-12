@@ -33,7 +33,7 @@ a:hover {
 {
 	font-size: 20px;
 	margin-left: 10%;
-	padding-top: 40px;
+	padding-top: 40px!important;
 	color: #000000!important; /* Insisted this to be important as the style was ignored due to the link */
 	font-family: 'Quicksand', sans-serif!important; /* Insisted this to be important as the style was ignored due to the link */
 	font-weight:700!important; /* Insisted this to be important as the style was ignored due to the link */
