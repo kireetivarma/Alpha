@@ -1,0 +1,103 @@
+<!doctype html>
+<!-- Kireeti Varma Dendukuri -->
+<!-- Final Project: Portfolio -->
+<!-- This is the portfolio page which will be replicated for all the portfolios. The original design ca be accessed at http://www.kireetivarma.me/station91-->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- Linking CSS Stylesheet -->
+	<link rel="stylesheet" href="FinalProject_Dendukuri.css">
+	<!-- Linking font from Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<!-- Linking JavaScript file -->
+	<script src="FinalProject_Dendukuri.js"></script>
+	<title>TEDxGateway 2018</title>
+</head>
+
+<body>
+	<!-- Header section -->
+	<div class="HeaderTitle">
+		<p id="TitleText">Kireeti Varma</p>
+		<ul id="MenuItem">
+		  <li class="MI"><a class="MenuItem" href="FinalProject_Dendukuri_1.html">Home</a></li>
+		  <li class="MI"><a class="MenuItem" href="FinalProject_Dendukuri_2.html">About</a></li>
+		  <li class="MI"><a class="MenuItem" href="FinalProject_Dendukuri_3.html">Projects</a></li>
+		  <li class="MI"><a class="MenuItem" href="FinalProject_Dendukuri_4.html">Contact</a></li>
+		</ul>
+	</div>
+	
+	<!-- Initial title section defining the project -->
+	<div class="TitleSection">
+		<!-- Centering information in one area -->
+		<div class="CenteredBlock">
+			<!-- Title logo of client -->
+			<img class="PageTitleImage" src="Images/TEDxGatewaylogo.png" alt="TEDxGateway Logo">
+			<!-- Description of the portfolio -->
+			<p class="PageText"> TEDxGateway is India's largest TEDx Event. We partnered with TEDx to support them as a story partner. </p>
+			<!-- Defining a section for a list of items -->
+			<div class="ItemsSection">
+				<!-- Defining list of items -->
+				<div class="ListOfItems">
+					<!-- Single item -->
+					<div class="Item">
+						<p class="ItemTitle">Role</p> <!-- Title -->
+						<p class="ItemText">Designer</p> <!-- Description -->
+					</div>
+					<div class="Item">
+						<p class="ItemTitle">Software</p>
+						<p class="ItemText">Adobe Illustrator</p>
+					</div>
+					<div class="Item">
+						<p class="ItemTitle">Year</p>
+						<p class="ItemText">2018</p>
+					</div>
+				</div>
+			</div>
+			<p class="PageText"> We curated the life stories of all the speakers attending the event on Tymline. We shared the below cards to all the 2000 attendees who used the card to access the stories link via a QR Code. </p>
+		</div>
+	</div>
+	<!-- Defining a large section for portfolio image -->
+	<div class="ShowcaseSection">
+		<!-- Description for interaction with the image -->
+		<p class="ShowcaseText">Click the below card to rotate.</p>
+		<!-- Centering image as a block item -->
+		<div class="CenteredBlock">
+			<div class="card" onclick="flip(event)">
+			<!-- The front and face classes are respectively used to style the front and back of the card -->
+			<!-- Shows the front of the card. Shown when this page initially loads in Safari/ Chrome or Firefox desktop browsers. -->
+				<div class="front face">
+					<img class="ShowcaseImageFlip" src="Images/TEDxGUFront.png" alt="TEDxGateway 2018 Card">
+				</div>
+				<!-- Shows the back of the card. Hidden when this page initially loads in Safari/ Chrome or Firefox desktop browsers. -->
+				<div class="back face">
+					<img class="ShowcaseImageFlip" src="Images/TEDxGUBack.png" alt="TEDxGateway 2018 Card">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Footer of the Page -->
+	<footer>
+		<div class="F_Section">
+			<div id="F_Segment1">
+				<p id="F_S1_Title">Kireeti Varma</p>
+				<p id="F_S1_Tagline">2018. All rights reserved.</p>
+			</div>
+			<div id="F_Segment2">
+				<ul id="F_S2_Links">
+					<li><a class="FSLink" href="FinalProject_Dendukuri_1.html">Home</a></li>
+					<li><a class="FSLink" href="FinalProject_Dendukuri_2.html">About</a></li>
+					<li><a class="FSLink" href="FinalProject_Dendukuri_4.html">Contact</a></li>
+				</ul>
+			</div>
+			<div id="F_Segment3">
+				<ul id="F_S3_Links">
+					<li><a class="FSLink" href="FinalProject_Dendukuri_5.html">Web Designs</a></li>
+					<li><a class="FSLink" href="FinalProject_Dendukuri_6.html">Graphic Designs</a></li>
+					<li><a class="FSLink" href="https://medium.com/theconceptio">Product Ideas</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

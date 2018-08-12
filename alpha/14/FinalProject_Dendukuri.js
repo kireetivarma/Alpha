@@ -33,3 +33,10 @@ function change2(event)
 	y=(y+1<pics2.length)? y+1 : 0;
 	element.src=pics2[y];
 }
+
+function flip(event)
+{
+	var element = event.currentTarget;
+	/* Toggle the setting of the classname attribute */
+	element.className = (element.className == 'card') ? 'card flipped' : 'card';
+}

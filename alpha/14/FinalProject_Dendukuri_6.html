@@ -1,18 +1,17 @@
 <!doctype html>
 <!-- Kireeti Varma Dendukuri -->
 <!-- Final Project: Portfolio -->
-<!-- My Final Project for the WNM Class-->
+<!-- i've re-created my existing portfolio design using the html, css & javascript. Have added additional features for the images to zoom when hovered. The portfolio images will change as clicked. Owing to the short time, have created just one portfolio page and linked all the portfolio pge-links to open the created page as a reference. The original design ca be accessed at http://www.kireetivarma.me/designs & http://www.kireetivarma.me/station91-->
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Kireeti Varma</title>
+	<title>Kireeti Varma Designs</title>
 	<!-- Attaching the Global CSS file -->
 	<link rel="stylesheet" href="FinalProject_Dendukuri.css">
 	<!-- Linking the Quicksand font which is used for all fonts on the page for uniformity -->
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
+
 <body>
 	<!-- Header section -->
 	<div class="HeaderTitle">
@@ -20,29 +19,34 @@
 		<ul id="MenuItem">
 		  <li class="MI"><a class="MenuItem" href="FinalProject_Dendukuri_1.html">Home</a></li>
 		  <li class="MI"><a class="MenuItem" href="FinalProject_Dendukuri_2.html">About</a></li>
-		  <li class="MI"><a class="MenuItem Active" href="FinalProject_Dendukuri_3.html">Projects</a></li>
+		  <li class="MI"><a class="MenuItem" href="FinalProject_Dendukuri_3.html">Projects</a></li>
 		  <li class="MI"><a class="MenuItem" href="FinalProject_Dendukuri_4.html">Contact</a></li>
 		</ul>
 	</div>
 	
-	<!-- Project Section -->
-	<div class="Section">
-		<div class="ProjectsTitleElement">
-			<p id="ProjectsTitle">Projects</p>
-		</div>
-		<div id="ProjectsContainer">
-			<a href="FinalProject_Dendukuri_5.html" class="ProjectBox PC_01">
-				<p class="ProjectNameTag">Web<br>Designs</p>
-			</a>
-			<a href="FinalProject_Dendukuri_6.html" class="ProjectBox PC_02">
-				<p class="ProjectNameTag">Graphic<br>Designs</p>
-			</a>
-			<a href="https://medium.com/theconceptio" class="ProjectBox PC_03">
-				<p class="ProjectNameTag">Product<br>Ideas</p>
-			</a>
+	<!-- Graphic Designs Section -->
+	<div class="Section" id="GraphicSection">
+		<div class="CenteredBlock">
+			<p class="GSectionTitle">Graphic Designs</p>
+			<div class="GHighlightLine"></div>
+			<div class="ItemsSection">
+				<div class="ListOfItems">
+					<div class="GItem">
+						<div class="ItemLogo">
+							<a href="FinalProject_Dendukuri_10.html"><img class="ItemImage" src="Images/TEDxGatewaylogo.png" alt="TEDxGateway Logo"></a>
+						</div>
+						<p class="Gdateofitem">2018</p>
+					</div>
+					<div class="GItem">
+						<div class="ItemLogo">
+							<a href="FinalProject_Dendukuri_11.html"><img class="ItemImage" src="Images/Station91Logo.png" alt="Station91 Logo"></a>
+						</div>
+						<p class="Gdateofitem">2018</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-	
 	<!-- Footer of the Page -->
 	<footer>
 		<div class="F_Section">
@@ -67,21 +71,4 @@
 		</div>
 	</footer>
 </body>
-<script>
-	$(".PC_01").hover(function(){
-			$(this).css("background-color", "#ABCFF4");
-			}, function(){
-        $(this).css("background-color", "black");
-    });
-	$(".PC_02").hover(function(){
-			$(this).css("background-color", "#F4ABB3");
-			}, function(){
-        $(this).css("background-color", "black");
-    });
-	$(".PC_03").hover(function(){
-			$(this).css("background-color", "#91E1A0");
-			}, function(){
-        $(this).css("background-color", "black");
-    });
-</script>
 </html>
